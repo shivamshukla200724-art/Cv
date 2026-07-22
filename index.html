@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shivam Shukla | Video Editor & Copywriter</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#0a0a0a;color:#e0e0e0;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+.grad{background:linear-gradient(135deg,#f97316,#ec4899,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.sec{padding:80px 0}
+.label{color:#f97316;font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
+.title{font-size:32px;font-weight:800;color:#fff;margin-bottom:15px}
+.center{text-align:center}
+.muted{color:#9ca3af}
+
+nav{position:fixed;top:0;left:0;width:100%;background:rgba(10,10,10,0.9);z-index:100;border-bottom:1px solid #1f2937}
+.nav-in{max-width:1000px;margin:0 auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:24px;font-weight:800}
+.nav-links a{color:#9ca3af;margin-left:20px;font-size:14px}
+.nav-links a:hover{color:#fff}
+.hire{background:linear-gradient(135deg,#f97316,#ec4899);color:#fff!important;padding:8px 20px;border-radius:50px;font-weight:700}
+#mbtn{display:none;background:none;border:none;color:#fff;font-size:24px;cursor:pointer}
+#mmenu{display:none;background:#0a0a0a;padding:10px 20px}
+#mmenu a{display:block;padding:10px;color:#9ca3af}
+#mmenu.open{display:block}
+
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:100px 20px 40px}
+.avatar{width:130px;height:130px;border-radius:50%;background:linear-gradient(135deg,#f97316,#ec4899,#8b5cf6);padding:4px;margin:0 auto 25px}
+.avatar-in{width:100%;height:100%;border-radius:50%;background:#1a1a1a;display:flex;align-items:center;justify-content:center;font-size:44px;font-weight:800;color:#fff;border:4px solid #0a0a0a}
+.h1{font-size:48px;font-weight:800;color:#fff;margin-bottom:10px}
+.role{font-size:20px;color:#9ca3af;margin-bottom:15px;min-height:30px}
+.cur{display:inline-block;width:3px;height:1em;background:#f97316;vertical-align:text-bottom;animation:bk .8s infinite}
+@keyframes bk{50%{opacity:0}}
+.desc{font-size:16px;color:#d1d5db;margin-bottom:8px}
+.sub{color:#6b7280;margin-bottom:30px}
+.btns{display:flex;gap:15px;justify-content:center;flex-wrap:wrap;margin-bottom:40px}
+.btn1{padding:14px 32px;background:linear-gradient(135deg,#f97316,#ec4899);color:#fff;font-weight:700;border-radius:50px}
+.btn2{padding:14px 32px;border:2px solid #374151;color:#fff;font-weight:700;border-radius:50px}
+.stats{display:flex;justify-content:center;gap:40px}
+.sn{font-size:30px;font-weight:800;color:#fff}
+.sl{font-size:11px;color:#6b7280;letter-spacing:2px;text-transform:uppercase}
+
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.code{background:#111827;border:1px solid #1f2937;border-radius:14px;padding:25px;font-family:monospace;font-size:13px;line-height:2}
+.ck{color:#f472b6}.cv{color:#93c5fd}.cg{color:#4ade80}.co{color:#fb923c}.cb{color:#a78bfa}.cy{color:#fbbf24}.cc{color:#6b7280}
+.ig{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:25px}
+.ic{background:#111827;border:1px solid #1f2937;border-radius:12px;padding:15px}
+.ic .e{font-size:18px;margin-bottom:5px}
+.ic .l{font-size:11px;color:#6b7280;text-transform:uppercase}
+.ic .v{color:#fff;font-weight:600;font-size:14px}
+.hl{color:#f97316;font-weight:600}
+.wb{color:#fff;font-weight:700}
+
+.g3{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.sk{background:#111827;border:1px solid #1f2937;border-radius:14px;padding:25px}
+.sh{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.si{width:50px;height:50px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px}
+.s1{background:linear-gradient(135deg,#f97316,#ef4444)}
+.s2{background:linear-gradient(135deg,#8b5cf6,#ec4899)}
+.s3{background:linear-gradient(135deg,#06b6d4,#3b82f6)}
+.s4{background:linear-gradient(135deg,#eab308,#f97316)}
+.sn2{font-size:17px;font-weight:700;color:#fff}
+.ss{font-size:12px;color:#6b7280}
+.sd{color:#9ca3af;font-size:14px;margin-bottom:15px}
+.bar{width:100%;height:8px;background:#1f2937;border-radius:8px;overflow:hidden}
+.fill{height:100%;border-radius:8px}
+.f1{background:linear-gradient(90deg,#f97316,#ef4444);width:35%}
+.f2{background:linear-gradient(90deg,#8b5cf6,#ec4899);width:30%}
+.f3{background:linear-gradient(90deg,#06b6d4,#3b82f6);width:25%}
+.f4{background:linear-gradient(90deg,#eab308,#f97316);width:100%}
+.tools{margin-top:40px;text-align:center}
+.tl{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:15px}
+.tt{padding:8px 18px;background:#111827;border:1px solid #1f2937;border-radius:50px;font-size:13px;color:#d1d5db}
+
+.sv{background:#111827;border:1px solid #1f2937;border-radius:14px;padding:30px 20px;text-align:center}
+.sv .e{font-size:32px;margin-bottom:15px}
+.sv h3{font-size:19px;color:#fff;margin-bottom:10px}
+.sv p{color:#9ca3af;font-size:14px}
+.pr{margin-top:18px;padding-top:18px;border-top:1px solid #1f2937;font-weight:700}
+.po{color:#f97316}.pp{color:#8b5cf6}.pc{color:#06b6d4}
+
+.tl2{position:relative;margin-left:15px}
+.tl2::before{content:'';position:absolute;left:7px;top:0;bottom:0;width:2px;background:linear-gradient(#f97316,#8b5cf6,#06b6d4)}
+.ti{margin-left:35px;margin-bottom:30px;position:relative}
+.td{position:absolute;left:-35px;top:6px;width:16px;height:16px;border-radius:50%;border:3px solid #0a0a0a}
+.d1{background:#f97316}.d2{background:#8b5cf6}.d3{background:#ec4899}.d4{background:#22c55e}
+.tc{background:#111827;border:1px solid #1f2937;border-radius:12px;padding:20px}
+.tc h4{color:#fff;font-size:16px;margin-bottom:6px}
+.tc .dt{display:inline-block;font-size:11px;font-family:monospace;padding:3px 10px;border-radius:50px;background:rgba(249,115,22,0.1);color:#f97316;margin-bottom:8px}
+.tc p{color:#9ca3af;font-size:14px}
+
+.quote{padding:70px 20px;text-align:center;background:linear-gradient(90deg,rgba(249,115,22,0.08),rgba(236,72,153,0.08),rgba(139,92,246,0.08))}
+.qt{font-size:24px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:15px}
+.qa{color:#6b7280}
+
+.cc2{display:grid;grid-template-columns:1fr 1fr 1fr;gap:15px;margin-bottom:30px}
+.cc3{background:#111827;border:1px solid #1f2937;border-radius:14px;padding:25px 15px;text-align:center}
+.cc3 .e{font-size:26px;margin-bottom:10px}
+.cc3 h4{color:#fff;font-size:15px;margin-bottom:4px}
+.cc3 p{color:#9ca3af;font-size:12px;word-break:break-all}
+.cta{background:#111827;border:1px solid #1f2937;border-radius:14px;padding:40px 25px;text-align:center}
+.cta h3{font-size:22px;color:#fff;margin-bottom:10px}
+.cta p{color:#9ca3af;margin-bottom:25px}
+.ctab{display:inline-block;padding:15px 35px;background:linear-gradient(135deg,#f97316,#ec4899,#8b5cf6);color:#fff;font-weight:700;border-radius:50px}
+
+footer{border-top:1px solid #1f2937;padding:20px;text-align:center;color:#6b7280;font-size:13px}
+
+@media(max-width:768px){
+.nav-links{display:none}
+#mbtn{display:block}
+.h1{font-size:36px}
+.g2,.g3,.cc2{grid-template-columns:1fr}
+.title{font-size:26px}
+.qt{font-size:20px}
+.stats{gap:25px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="nav-in">
+<a href="#home" class="logo grad">SS.</a>
+<div class="nav-links">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#services">Services</a>
+<a href="#journey">Journey</a>
+<a href="#contact" class="hire">Hire Me</a>
+</div>
+<button id="mbtn">☰</button>
+</div>
+<div id="mmenu">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#services">Services</a>
+<a href="#journey">Journey</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<header class="hero" id="home">
+<div>
+<div class="avatar"><div class="avatar-in">SS</div></div>
+<p class="label">Hey there, I'm</p>
+<h1 class="h1">Shivam <span class="grad">Shukla</span></h1>
+<p class="role"><span id="tt"></span><span class="cur"></span></p>
+<p class="desc">🎬 Video Editor • ✍️ Copywriter • 🚀 Future Entrepreneur</p>
+<p class="sub">First-year student on a mission to become financially independent.</p>
+<div class="btns">
+<a href="#contact" class="btn1">📧 Get In Touch</a>
+<a href="#about" class="btn2">👤 Know More</a>
+</div>
+<div class="stats">
+<div><div class="sn">1</div><div class="sl">Year Journey</div></div>
+<div><div class="sn">100</div><div class="sl">% Dedication</div></div>
+<div><div class="sn">∞</div><div class="sl">Ambition</div></div>
+</div>
+</div>
+</header>
+
+<section class="sec" id="about">
+<div class="wrap">
+<div class="g2">
+<div class="code">
+<p class="cc">// about_shivam.js</p>
+<p><span class="ck">const</span> <span class="cv">shivam</span> = {</p>
+<p>&nbsp;&nbsp;<span class="cg">name</span>: <span class="co">"Shivam Shukla"</span>,</p>
+<p>&nbsp;&nbsp;<span class="cg">age</span>: <span class="cb">17</span>,</p>
+<p>&nbsp;&nbsp;<span class="cg">location</span>: <span class="co">"Rewa, MP"</span>,</p>
+<p>&nbsp;&nbsp;<span class="cg">status</span>: <span class="co">"1st Year Student"</span>,</p>
+<p>&nbsp;&nbsp;<span class="cg">mission</span>: <span class="co">"Financial Independence"</span>,</p>
+<p>&nbsp;&nbsp;<span class="cg">skills</span>: [<span class="cy">"Video Editing"</span>, <span class="cy">"Copywriting"</span>],</p>
+<p>&nbsp;&nbsp;<span class="cg">hustle</span>: <span class="cb">true</span>,</p>
+<p>&nbsp;&nbsp;<span class="cg">givingUp</span>: <span class="cb">false</span></p>
+<p>};</p>
+</div>
+<div>
+<p class="label">About Me</p>
+<h2 class="title">A First-Year Student With <span class="grad">Big Dreams</span></h2>
+<p class="muted">Hey! I'm <span class="wb">Shivam Shukla</span> from <span class="wb">Rewa, Madhya Pradesh</span>. I'm a first-year college student, but I'm not waiting for a degree to build my future.</p>
+<br>
+<p class="muted">I believe in <span class="hl">learning by doing</span>. I'm exploring video editing and copywriting because of their huge potential.</p>
+<br>
+<p class="muted">My goal? To become <span class="hl">financially independent</span> while in college. 💪</p>
+<div class="ig">
+<div class="ic"><div class="e">📍</div><div class="l">Location</div><div class="v">Rewa, MP</div></div>
+<div class="ic"><div class="e">🎓</div><div class="l">Education</div><div class="v">1st Year</div></div>
+<div class="ic"><div class="e">🚀</div><div class="l">Goal</div><div class="v">Independence</div></div>
+<div class="ic"><div class="e">❤️</div><div class="l">Passion</div><div class="v">Content</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="skills">
+<div class="wrap">
+<div class="center" style="margin-bottom:40px">
+<p class="label">What I Can Do</p>
+<h2 class="title">My <span class="grad">Skills</span></h2>
+</div>
+<div class="g2">
+<div class="sk">
+<div class="sh"><div class="si s1">🎬</div><div><div class="sn2">Video Editing</div><div class="ss">Reels • Shorts • YouTube</div></div></div>
+<p class="sd">Creating engaging video content. Learning CapCut, Premiere Pro, DaVinci Resolve.</p>
+<div class="bar"><div class="fill f1"></div></div>
+</div>
+<div class="sk">
+<div class="sh"><div class="si s2">✍️</div><div><div class="sn2">Copywriting</div><div class="ss">Ads • Captions • Scripts</div></div></div>
+<p class="sd">Learning persuasive ad copy, social media captions, and marketing content.</p>
+<div class="bar"><div class="fill f2"></div></div>
+</div>
+<div class="sk">
+<div class="sh"><div class="si s3">💡</div><div><div class="sn2">Content Creation</div><div class="ss">Ideas • Strategy</div></div></div>
+<p class="sd">Creative content ideas, planning calendars, understanding viral content.</p>
+<div class="bar"><div class="fill f3"></div></div>
+</div>
+<div class="sk">
+<div class="sh"><div class="si s4">🔥</div><div><div class="sn2">Hustle & Mindset</div><div class="ss">Discipline • Grind</div></div></div>
+<p class="sd">Hunger to learn, patience to grow, discipline to keep going no matter what.</p>
+<div class="bar"><div class="fill f4"></div></div>
+</div>
+</div>
+<div class="tools">
+<p class="muted" style="letter-spacing:2px;text-transform:uppercase;font-size:12px">Tools I'm Learning</p>
+<div class="tl">
+<span class="tt">✂️ CapCut</span>
+<span class="tt">🎞️ Premiere Pro</span>
+<span class="tt">🎬 DaVinci</span>
+<span class="tt">🎨 Canva</span>
+<span class="tt">📝 Google Docs</span>
+<span class="tt">🧠 ChatGPT</span>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="services">
+<div class="wrap">
+<div class="center" style="margin-bottom:40px">
+<p class="label">What I Offer</p>
+<h2 class="title">My <span class="grad">Services</span></h2>
+</div>
+<div class="g3" style="grid-template-columns:1fr 1fr 1fr">
+<div class="sv"><div class="e">🎬</div><h3>Video Editing</h3><p>Short reels, YouTube videos, promotional clips.</p><div class="pr po">Starting at ₹500</div></div>
+<div class="sv"><div class="e">✍️</div><h3>Copywriting</h3><p>Ad copies, captions, product descriptions that convert.</p><div class="pr pp">Starting at ₹300</div></div>
+<div class="sv"><div class="e">📣</div><h3>Content Strategy</h3><p>Content plans and scripts for your brand.</p><div class="pr pc">Let's Discuss</div></div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="journey">
+<div class="wrap" style="max-width:700px">
+<div class="center" style="margin-bottom:40px">
+<p class="label">My Path</p>
+<h2 class="title">The <span class="grad">Journey</span></h2>
+</div>
+<div class="tl2">
+<div class="ti"><div class="td d1"></div><div class="tc"><h4>🎓 Started College</h4><span class="dt">2024 - Present</span><p>Started college with a mission to BUILD something while studying.</p></div></div>
+<div class="ti"><div class="td d2"></div><div class="tc"><h4>✍️ Discovered Copywriting</h4><span class="dt">2024</span><p>Learned words have the power to sell. Started learning copywriting.</p></div></div>
+<div class="ti"><div class="td d3"></div><div class="tc"><h4>🎬 Started Video Editing</h4><span class="dt">2024</span><p>Learning to edit reels, shorts, and YouTube videos.</p></div></div>
+<div class="ti"><div class="td d4"></div><div class="tc"><h4>🚀 Looking for Clients!</h4><span class="dt">NOW</span><p>Ready for freelance projects! Need a video editor or copywriter? I'm your guy.</p></div></div>
+</div>
+</div>
+</section>
+
+<section class="quote">
+<div class="qt">"I'm not waiting for the <span class="grad">perfect moment</span>. I'm making this moment <span class="grad">perfect</span>."</div>
+<div class="qa">— Shivam Shukla</div>
+</section>
+
+<section class="sec" id="contact">
+<div class="wrap">
+<div class="center" style="margin-bottom:40px">
+<p class="label">Let's Connect</p>
+<h2 class="title">Get In <span class="grad">Touch</span></h2>
+</div>
+<div class="cc2">
+<a href="mailto:shivamshukla242007@gmail.com" class="cc3"><div class="e">📧</div><h4>Email Me</h4><p>shivamshukla242007@gmail.com</p></a>
+<a href="tel:+918878320000" class="cc3"><div class="e">📞</div><h4>Call Me</h4><p>+91 887832xxxx</p></a>
+<div class="cc3"><div class="e">📍</div><h4>Location</h4><p>Rewa, Madhya Pradesh</p></div>
+</div>
+<div class="cta">
+<h3>Ready to work together? 🤝</h3>
+<p>Drop me an email and I'll get back to you ASAP!</p>
+<a href="mailto:shivamshukla242007@gmail.com" class="ctab">📧 Email Me Now</a>
+</div>
+</div>
+</section>
+
+<footer>© 2024 Shivam Shukla • Built with ❤️ and Hustle 🔥</footer>
+
+<script>
+var b=document.getElementById('mbtn'),m=document.getElementById('mmenu');
+b.onclick=function(){m.classList.toggle('open');b.textContent=m.classList.contains('open')?'✕':''};
+var ml=m.getElementsByTagName('a');
+for(var i=0;i<ml.length;i++){ml[i].onclick=function(){m.classList.remove('open');b.textContent='☰'}}
+var roles=["Video Editor","Copywriter","Content Creator","Future Entrepreneur","First Year Hustler"];
+var ri=0,ci=0,del=false,te=document.getElementById('tt');
+function tw(){var r=roles[ri];if(del){ci--;te.textContent=r.substring(0,ci)}else{ci++;te.textContent=r.substring(0,ci)}var s=del?50:100;if(!del&&ci===r.length){s=2000;del=true}else if(del&&ci===0){del=false;ri=(ri+1)%roles.length;s=500}setTimeout(tw,s)}tw();
+</script>
+</body>
+                                          </html>
